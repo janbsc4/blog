@@ -1,13 +1,21 @@
-module.exports = function(eleventyConfig) {
+module.exports = eleventyConfig => {
+  // Copy our static assets to the output folder
+  eleventyConfig.addPassthroughCopy('css');
+  // eleventyConfig.addPassthroughCopy('js');
+  eleventyConfig.addPassthroughCopy('images');
+
   eleventyConfig.setTemplateFormats([
     "md",
-    "css",
-    "jpg"
+    "css" // css is not yet a recognized template extension in Eleventy
   ]);
+
+
+  // Returning something from the configuration function is optional
+  return {
+    dir: {
+      output: 'docs'
+    }
+  };
 };
 
-module.exports = {
-  dir: {
-  output: "docs"
-  }
-};
+// Need to combine both functions here.
