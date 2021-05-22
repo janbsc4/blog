@@ -5,3 +5,9 @@ module.exports = function(eleventyConfig) {
     "jpg"
   ]);
 };
+
+module.exports = {
+  dir: {
+  output: "docs"
+  }
+};
