@@ -3,20 +3,15 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('css');
   // eleventyConfig.addPassthroughCopy('js');
   eleventyConfig.addPassthroughCopy('images');
-
   eleventyConfig.setTemplateFormats([
     "md",
     "css" // css is not yet a recognized template extension in Eleventy
   ]);
-
   // Returning something from the configuration function is optional
   return {
+    pathPrefix: "/blog/",
     dir: {
       output: 'docs'
     }
   };
-};
-
-module.exports = {
-    pathPrefix: "/blog/"
 };
