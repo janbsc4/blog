@@ -9,7 +9,6 @@ module.exports = eleventyConfig => {
     "css" // css is not yet a recognized template extension in Eleventy
   ]);
 
-
   // Returning something from the configuration function is optional
   return {
     dir: {
@@ -18,4 +17,6 @@ module.exports = eleventyConfig => {
   };
 };
 
-// Need to combine both functions here.
+module.exports = {
+    pathPrefix: "/blog/"
+};
