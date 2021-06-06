@@ -1,16 +1,16 @@
 /*Fonts*/
 @font-face {
 	font-family: Chaparral;
-	src: url("/fonts/chaparral-pro/chaparralpro-regular.otf") format("opentype");
+	src: url("/blog/fonts/chaparral-pro/chaparralpro-regular.otf") format("opentype");
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: Chaparral;
-	src: url("/fonts/chaparral-pro/chaparralpro-bold.otf") format("opentype");
-	font-style: bold;
-	font-weight: normal;
+	src: url("/blog/fonts/chaparral-pro/chaparralpro-bold.otf") format("opentype");
+	font-style: normal;
+	font-weight: bold;
 }
 
 /*General*/
@@ -20,6 +20,7 @@ body {
 	max-width:  55rem;
 	background: Cornsilk;
 	margin: 1rem 5rem;
+	font-style: normal;
 
 }
 
