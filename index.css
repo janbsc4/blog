@@ -1,8 +1,26 @@
+/*Fonts*/
+@font-face {
+	font-family: Chaparral;
+	src: url("/fonts/chaparral-pro/chaparralpro-regular.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Chaparral;
+	src: url("/fonts/chaparral-pro/chaparralpro-bold.otf") format("opentype");
+	font-style: bold;
+	font-weight: normal;
+}
+
+/*General*/
 body {
-	font-family: sans-serif;
-	font-size:  1.2rem;
+	font-family: Chaparral, sans-serif;
+	font-size:  1.4rem;
 	max-width:  55rem;
-	background: #fff2c9;
+	background: Cornsilk;
+	margin: 1rem 5rem;
+
 }
 
 nav ul {
@@ -15,5 +33,53 @@ nav ul {
 }
 
 nav ul li:not(:last-child) {
-	margin-right: 1.5em;
+	margin-right: 0.5em;
+}
+
+a {
+	color: LightCoral;
+	text-decoration: none;
+}
+
+
+a:hover {
+  color: IndianRed;
+}
+
+img {
+	max-width: 100%;
+	max-height: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {margin: 1rem 1.5rem;}
+} 
+
+/*Dark mode*/
+@media (prefers-color-scheme: dark) {
+
+	body {
+		background-color: black;
+	}
+
+	body {
+		color: Cornsilk;
+	}
+	
+	a {
+		color: BurlyWood;
+	}
+
+	a:hover, span, figcaption, blockquote, .notes {
+	color: BlanchedAlmond;
+	}
+
+	img {
+		opacity: 0.75;
+		transition: opacity .5s ease-in-out;	
+	}
+
+	img:hover {
+		opacity: 1;
+	}
 }
