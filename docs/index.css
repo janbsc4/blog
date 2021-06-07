@@ -13,15 +13,29 @@
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: Chaparral;
+	src: url("/blog/fonts/chaparral-pro/chaparralpro-italic.otf") format("opentype");
+	font-style: italic;
+	font-weight: normal;
+}
+
 /*General*/
 body {
 	font-family: Chaparral, sans-serif;
 	font-size:  1.4rem;
-	max-width:  55rem;
-	background: Cornsilk;
-	margin: 1rem 5rem;
+	max-width:  50rem;
+	background: #FFF3D6;
+	margin: 1rem 7rem;
 	font-style: normal;
+}
 
+p {
+	line-height: 1.4;
+}
+
+blockquote {
+	font-style: italic;
 }
 
 nav ul {
@@ -38,13 +52,13 @@ nav ul li:not(:last-child) {
 }
 
 a {
-	color: LightCoral;
+	color: #ffba08;
 	text-decoration: none;
 }
 
 
 a:hover {
-  color: IndianRed;
+  color: #E09D00;
 }
 
 img {
