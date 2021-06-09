@@ -2,11 +2,11 @@
 pageTitle: Inertia Management
 date: 2020-02-26
 ---
-## [Inertia Management]({{ '/posts/inertia-management' | url }})
-
 Have you ever improved some aspect of your life, only to wonder afterwards why you hadn’t done it earlier?
 
-What was stopping you? It might have been our natural tendency towards the easy and familiar, the comfort zone.
+What was stopping you? 
+
+It might have been our natural tendency towards the easy and familiar, the comfort zone.
 
 In physics inertia is defined as the following:
 
